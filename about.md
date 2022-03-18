@@ -2,7 +2,7 @@
 layout: articles
 title: About
 permalink: /about
-published: false
+published: true
 ---
 ![Image](assets/images/profile.jpg){:.circle.border.shadow.image--md}
 
