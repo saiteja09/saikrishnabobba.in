@@ -11,7 +11,7 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-proxy: https://cors.saikrishnabobba.workers.dev??https://github.com/login/oauth/access_token
+
 
 ## => Site Settings
 ##############################
@@ -126,6 +126,7 @@ comments:
   gitalk:
     clientID    : 1f1138924d16ae67daee
     clientSecret: 6584efac402ed99dc88acafafae1713fba758e57
+    proxy       : https://cors.saikrishnabobba.workers.dev
     repository  : saikrishnabobba.in
     owner       : saiteja09
     admin       :

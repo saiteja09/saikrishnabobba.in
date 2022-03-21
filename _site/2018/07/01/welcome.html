@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Welcome - Saikrishna Bobba</title>
 
 <meta name="description" content="If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:You may want to config the site or writing a post next. Please feel ...">
-<link rel="canonical" href="http://localhost:4000/2018/07/01/welcome.html"><link rel="alternate" type="application/rss+xml" title="Saikrishna Bobba" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://saikrishnabobba.in/2018/07/01/welcome.html"><link rel="alternate" type="application/rss+xml" title="Saikrishna Bobba" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -232,8 +232,8 @@
         leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
         chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
         gitalk: {
-          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
-          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+          js: 'https://unpkg.com/gitalk/dist/gitalk.min.js',
+          css: 'https://unpkg.com/gitalk/dist/gitalk.css'
         },
         valine: 'https://unpkg.com/valine/dist/Valine.min.js',
         mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
@@ -459,15 +459,17 @@ m-2013 -217 c21 -50 21 -145 -1 -211 -11 -33 -36 -72 -66 -105 -166 -182 -535
 	</style>
 <div class="gitalk-wrapper" id="js-gitalk-container"></div>
 <script>
-		window.Lazyload.css('https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css');
-		window.Lazyload.js('https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js', function() {
+		window.Lazyload.css('https://unpkg.com/gitalk/dist/gitalk.css');
+		window.Lazyload.js('https://unpkg.com/gitalk/dist/gitalk.min.js', function() {
 			var gitalk = new Gitalk({
 				clientID: '1f1138924d16ae67daee',
 				clientSecret: '6584efac402ed99dc88acafafae1713fba758e57',
 				repo: 'saikrishnabobba.in',
 				owner: 'saiteja09',
 				admin: ['saiteja09'],
-				id: 'welcomepage'
+				id: 'welcomepage',
+				proxy: [],
+
 			});
 			gitalk.render('js-gitalk-container');
 		});
