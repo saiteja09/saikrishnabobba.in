@@ -11,7 +11,7 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-
+proxy: https://cors.saikrishnabobba.workers.dev??https://github.com/login/oauth/access_token
 
 ## => Site Settings
 ##############################
