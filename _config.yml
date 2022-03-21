@@ -13,7 +13,6 @@
 
 
 
-
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
@@ -116,9 +115,10 @@ sharing:
 
 
 ## => Comments
+## false (default), "disqus", "gitalk", "valine", "custom"#
 ##############################
 comments:
-  provider: "gitalk" # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk
 
 
   ## Gitalk
